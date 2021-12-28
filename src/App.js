@@ -2,13 +2,17 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 
 import {
-  Home
+  About,
+  Skills,
+  Career,
 } from "./pages"
 
 function App() {
   return (
     <Routes>
-      <Route exact path ="/" element={ <Home /> } />
+      <Route exact path ="/" element={ <About /> } />
+      <Route exact path ="/skills" element={ <Skills /> } />
+      <Route exact path ="/career" element={ <Career /> } />
     </Routes>
   );
 }
