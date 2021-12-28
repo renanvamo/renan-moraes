@@ -4,3 +4,20 @@
   background-color: rgb(48, 48, 48);
   color: aliceblue;
 }
+
+.nav-left {
+  display: flex;
+}
+
+.nav-left p {
+  padding: 30px 40px;
+}
+
+.nav-right img {
+  padding: 20px 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}

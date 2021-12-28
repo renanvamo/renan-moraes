@@ -6,12 +6,12 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <div>
+        <div className='nav-left'>
           <p>RM</p>
           <p>Skills</p>
           <p>Career</p>
         </div>
-        <div>
+        <div className='nav-right'>
           <img src={ Linkedin } alt="logotipo-linkedin"></img>
           <img src= { Github } alt="logotipo-github"></img>
         </div>
