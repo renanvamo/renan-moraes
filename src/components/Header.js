@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const navigate = useNavigate();
-  const tabs = ['Skills', 'Career', 'Contact' ];
+  const tabs = ['skills', 'career', 'contact' ];
   const myLinkedin = 'https://linkedin.com/in/renan-vamo';
   const myGithub = 'https://github.com/renanvamo';
 
@@ -18,7 +18,7 @@ export default function Header() {
           { tabs.map((tab, i) => (
             <li
               key={ `${i}-${tab}` }
-              onClick={ () => navigate(`/${tab.toLowerCase()}`) }
+              onClick={ () => navigate(`/${tab}`) }
             >
               { tab }
             </li>
