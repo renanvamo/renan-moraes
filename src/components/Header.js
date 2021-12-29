@@ -1,19 +1,32 @@
 import React from 'react';
-import Linkedin from '../images/linkedin.png';
-import Github from '../images/logotipo-do-github.png';
+import linkedin from '../images/linkedin.png';
+import github from '../images/logotipo-do-github.png';
+import { useNavigate } from 'react-router-dom';
+
 
 export default function Header() {
+  const navigate = useNavigate();
+  const tabs = ['Skills', 'Career', 'Contact' ];
+  const myLinkedin = 'https://linkedin.com/in/renan-vamo';
+  const myGithub = 'https://github.com/renanvamo';
+
   return (
     <header>
       <nav>
-        <div className='nav-left'>
-          <p>RM</p>
-          <p>Skills</p>
-          <p>Career</p>
-        </div>
+        <span onClick={ () => navigate(`/`) }>RM</span>
+        <ul className='nav-left'>
+          { tabs.map((tab, i) => (
+            <li
+              key={ `${i}-${tab}` }
+              onClick={ () => navigate(`/${tab.toLowerCase()}`) }
+            >
+              { link }
+            </li>
+          )) }
+        </ul>
         <div className='nav-right'>
-          <img src={ Linkedin } alt="logotipo-linkedin"></img>
-          <img src= { Github } alt="logotipo-github"></img>
+          <a href={ myLinkedin } target="_blank" rel="noreferrer"><img src={ linkedin } alt="logotipo-linkedin" /></a>
+          <a href={ myGithub } target="_blank" rel="noreferrer"><img src= { github } alt="logotipo-github" /></a>
         </div>
       </nav>
     </header>

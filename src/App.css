@@ -5,19 +5,25 @@
   color: aliceblue;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+nav span {
+  padding: 30px 20px;
+  list-style: none;
+}
+
 .nav-left {
   display: flex;
 }
 
-.nav-left p {
-  padding: 30px 40px;
+.nav-left li {
+  padding: 30px 20px;
+  list-style: none;
 }
 
 .nav-right img {
   padding: 20px 10px;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
