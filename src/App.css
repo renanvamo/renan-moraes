@@ -5,6 +5,11 @@
   color: aliceblue;
 }
 
+body {
+  width: 90%;
+  margin: auto;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -27,3 +32,40 @@ nav span {
   padding: 20px 10px;
 }
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+} 
+
+.about-title {
+  text-align: center;
+  padding: 60px;
+}
+
+.about-img {
+  width: 40%;
+  height: auto;
+}
+
+.about-text {
+  padding-right: 40px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: auto;
+
+}
+
+.footer {
+  background-color: red;
+}
+
+.profile-img {
+  border-radius: 30px;
+  width: 100px;
+  height: 100px;
+}

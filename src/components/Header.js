@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
   const navigate = useNavigate();
-  const tabs = ['skills', 'career', 'contact' ];
+  const tabs = ['about', 'skills', 'career', 'contact' ];
   const myLinkedin = 'https://linkedin.com/in/renan-vamo';
   const myGithub = 'https://github.com/renanvamo';
 

@@ -1,8 +1,12 @@
 import React from 'react';
-import { Header } from '../components'
+import { Header, AboutMe } from '../components'
 
 export default function About() {
   return (
-    <Header />
+    <>
+      <Header />
+      <AboutMe />
+      {/* <Footer /> */}
+    </>
   );
 }
