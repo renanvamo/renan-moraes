@@ -5,6 +5,7 @@ import {
   About,
   Skills,
   Career,
+  Contact,
 } from "./pages"
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Route exact path ="/" element={ <About /> } />
       <Route exact path ="/skills" element={ <Skills /> } />
       <Route exact path ="/career" element={ <Career /> } />
+      <Route exact path ="/contact" element={ <Contact /> } />
     </Routes>
   );
 }
