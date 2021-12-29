@@ -20,7 +20,7 @@ export default function Header() {
               key={ `${i}-${tab}` }
               onClick={ () => navigate(`/${tab.toLowerCase()}`) }
             >
-              { link }
+              { tab }
             </li>
           )) }
         </ul>
