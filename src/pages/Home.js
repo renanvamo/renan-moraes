@@ -1,7 +1,5 @@
 import React from 'react';
 import { Header } from '../components';
-import myPhoto from '../images/renan-trybe.jpeg'
-
 
 export default function Home() {
   return (
