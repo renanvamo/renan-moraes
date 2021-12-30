@@ -1,8 +1,11 @@
 import React from 'react';
-import { Header } from '../components'
+import { Header, ContactForm } from '../components'
 
-export default function About() {
+export default function Contact() {
   return (
-    <Header />
+    <>
+      <Header />
+      <ContactForm />
+    </>
   );
-}
+} 
