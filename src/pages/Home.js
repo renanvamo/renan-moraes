@@ -6,6 +6,7 @@ export default function Home() {
     <>
       <Header />
       <h1 className="home-title">Renan Moraes</h1>
+      <p>Full Stack Web Developer</p>
       <p>Working and Studying at Trybe</p>
       <p>Trying to bring aknowledge and opportunities to people</p>
     </>
