@@ -13,6 +13,11 @@ body {
   margin: auto;
 }
 
+h1 {
+  line-height: 2.8em;
+  font-size: 45px;
+}
+
 /* header  */
 header {
   font-weight: 300;
@@ -44,11 +49,6 @@ nav span {
 .home-body {
   font-size: small;
   padding-left: 10%;
-}
-
-.home-title {
-  line-height: 2.8em;
-  font-size: 45px;
 }
 
 .home-body blockquote {
