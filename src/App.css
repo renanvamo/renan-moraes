@@ -47,7 +47,8 @@ nav span {
 }
 
 .home-title {
-  line-height: 3em;
+  line-height: 2.8em;
+  font-size: 45px;
 }
 
 .home-body blockquote {
