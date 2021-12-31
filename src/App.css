@@ -1,13 +1,21 @@
+/* site */
 * {
   margin: 0;
   padding: 0;
-  background-color: rgb(48, 48, 48);
-  color: aliceblue;
+  background-color: #050505;
+  color: #f7e9e6;
+  line-height: 1.6em;
+  font-family: 'Montserrat', 'Helvetica';
 }
 
 body {
-  width: 90%;
+  width: 70%;
   margin: auto;
+}
+
+/* header  */
+header {
+  font-weight: 300;
 }
 
 nav {
@@ -15,8 +23,7 @@ nav {
   justify-content: space-between;
 }
 nav span {
-  padding: 30px 20px;
-  list-style: none;
+  padding: 30px 0;
 }
 
 .nav-left {
@@ -29,8 +36,28 @@ nav span {
 }
 
 .nav-right img {
-  padding: 20px 10px;
+  padding: 20px 0 20px 10px;
 }
+
+/* home  */
+
+.home-body {
+  font-size: small;
+  padding-left: 10%;
+}
+
+.home-title {
+  line-height: 3em;
+}
+
+.home-body blockquote {
+  margin-top: 20px;
+  font-style: italic;
+  color: rgb(30, 223, 12);
+}
+
+
+/* about-page  */
 
 .about-container {
   display: flex;
@@ -65,6 +92,8 @@ nav span {
   width: 100px;
   height: 100px;
 }
+
+/* footer  */
 
 .footer {
   position: fixed;
