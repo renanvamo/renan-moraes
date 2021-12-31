@@ -1,8 +1,14 @@
 import React from 'react';
-import myPhoto from '../images/renan-trybe.jpeg'
+import renan from '../images/renan-trybe.jpeg'
+import heitor from '../images/fio-lindo.jpeg';
+import renan_e_fabiana from '../images/renan-e-fabi.jpg';
 
 export default function Photos() {
   return (
-    <img  className="about-img" src={ myPhoto } alt="Foto de um homem com camiseta da escola Trybe, ao funco há um computador" />
-  );
+    <section className='album'>
+      <img  className="about-img" src={ renan } alt="Foto de um homem com camiseta da escola Trybe, ao funco há um computador" />
+      <img  className="about-img" src={ heitor } alt="Foto de um bebê com sorrindo" />
+      <img  className="about-img" src={ renan_e_fabiana } alt="Foto de um homem com e uma mulher sorrindo, ela segura um teste de gravidez positivo" />
+    </section>
+    );
 }

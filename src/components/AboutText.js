@@ -3,7 +3,7 @@ import React from 'react';
 export default function AboutText() {
   return (
     <div className="about-text">
-      <p>Hi! My name is Renan Moraes! I'm 36 years old and living and resisting in an chaotic Brazil!</p>
+      <p>Hi! My name is Renan Moraes! I'm 36 years old, living and resisting in a complicated Brazil!</p>
       <br />
 
       <p>I'm a father of a brilliant child source of my greatest happiness, and by my side, I have a woman who supports me so I can realize my dream!

@@ -6,16 +6,22 @@
   color: #f7e9e6;
   line-height: 1.6em;
   font-family: 'Montserrat', 'Helvetica';
+  letter-spacing: 0.1px;
 }
 
 body {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
 h1 {
   line-height: 2.8em;
-  font-size: 45px;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+p {
+  font-size: small;
 }
 
 /* header  */
@@ -41,22 +47,20 @@ nav span {
 }
 
 .nav-right img {
-  padding: 20px 0 20px 10px;
+  margin: 20px 0 20px 10px;
 }
 
 /* home  */
 
 .home-body {
-  font-size: small;
-  padding-left: 10%;
+  padding: 0 40px;
 }
 
-.home-body blockquote {
+blockquote {
   margin-top: 20px;
   font-style: italic;
   color: rgb(30, 223, 12);
 }
-
 
 /* about-page  */
 
@@ -64,16 +68,25 @@ nav span {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 100%;
+  padding: 0 40px;
 } 
 
-.about-title {
-  text-align: center;
-  padding: 60px;
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto;
+}
+
+.album {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
 }
 
 .about-img {
-  width: 40%;
+  max-width: 30%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -81,12 +94,6 @@ nav span {
   padding-right: 40px;
 }
 
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  flex-basis: auto;
-
-}
 
 .profile-img {
   border-radius: 30px;
@@ -97,11 +104,10 @@ nav span {
 /* footer  */
 
 .footer {
+  margin-top: 10px;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: red;
-  color: white;
   text-align: center;
 }
