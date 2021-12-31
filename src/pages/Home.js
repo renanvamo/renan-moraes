@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../components';
+import { Footer, Header } from '../components';
 
 export default function Home() {
   return (
@@ -9,6 +9,7 @@ export default function Home() {
       <p>Full Stack Web Developer</p>
       <p>Working and Studying at Trybe</p>
       <p>Trying to bring aknowledge and opportunities to people</p>
+      <Footer />
     </>
   );
 }

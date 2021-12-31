@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../components'
+import { Footer, Header } from '../components'
 
 export default function Career() {
   return (
@@ -9,6 +9,7 @@ export default function Career() {
       <br />
       
       <p>Jul 2020 to present - Working in  course content, projects and evaluators at Trybe school.</p>
+      <Footer />
     </>
   );
 }

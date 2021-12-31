@@ -1,5 +1,5 @@
 import React from 'react';
-import { Header } from '../components'
+import { Footer, Header } from '../components'
 
 export default function Skills() {
   // Todos os icones usados são do site https://icons8.com.br/icons/set/free-icons
@@ -38,6 +38,7 @@ export default function Skills() {
       { skillMap(skillsFront) }
       <h2>Back end</h2>
       { skillMap(skillsBack) }
+      <Footer />
     </>
   );
 }
