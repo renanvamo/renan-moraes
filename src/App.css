@@ -112,6 +112,10 @@ blockquote {
 }
 
 /* skills */
+.skills-container {
+  padding: 0 40px;
+}
+
 .skills-title {
   background: linear-gradient(to right, #0fd850 0%, #f9f047 25%);
   background-clip: text;

@@ -33,11 +33,13 @@ export default function Skills() {
   return (
     <>
       <Header />
-      <h1 className='skills-title'>tech skills.</h1>
-      <h2>Front end</h2>
-      { skillMap(skillsFront) }
-      <h2>Back end</h2>
-      { skillMap(skillsBack) }
+      <section className='skills-container'>
+        <h1 className='skills-title'>tech skills.</h1>
+        <h2>Front end</h2>
+        { skillMap(skillsFront) }
+        <h2>Back end</h2>
+        { skillMap(skillsBack) }
+      </section>
       <Footer />
     </>
   );
