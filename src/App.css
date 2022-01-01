@@ -15,9 +15,8 @@ body {
 }
 
 h1 {
-  line-height: 2.8em;
   font-size: 50px;
-  font-weight: 700;
+  line-height: 2.8em;
 }
 
 p {
@@ -51,6 +50,12 @@ nav span {
 }
 
 /* home  */
+.home-title {
+  background: linear-gradient(to right, #fa57c9 0%, #c840f1 30%) ;
+  background-clip: text;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+}
 
 .home-body {
   padding: 0 40px;
@@ -59,10 +64,15 @@ nav span {
 blockquote {
   margin-top: 20px;
   font-style: italic;
-  color: rgb(30, 223, 12);
 }
 
 /* about-page  */
+.about-title {
+  background: linear-gradient(140deg, #f83600 0%, #f9d423 30%);
+  background-clip: text;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+}
 
 .about-container {
   display: flex;
@@ -99,6 +109,30 @@ blockquote {
   border-radius: 30px;
   width: 100px;
   height: 100px;
+}
+
+/* skills */
+.skills-title {
+  background: linear-gradient(to right, #0fd850 0%, #f9f047 25%);
+  background-clip: text;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+}
+
+/* career */
+.career-title {
+  background: linear-gradient(-225deg, #d640b1 0%, #FF1361 18%);
+  background-clip: text;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
+}
+
+/* contact */
+.contact-title {
+  background: linear-gradient(-225deg, #11a0d8 0%, #b1dada 30%);
+  background-clip: text;
+  font-weight: 700;
+  -webkit-text-fill-color: transparent;
 }
 
 /* footer  */

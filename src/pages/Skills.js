@@ -33,7 +33,7 @@ export default function Skills() {
   return (
     <>
       <Header />
-      <h1>tech skills.</h1>
+      <h1 className='skills-title'>tech skills.</h1>
       <h2>Front end</h2>
       { skillMap(skillsFront) }
       <h2>Back end</h2>
