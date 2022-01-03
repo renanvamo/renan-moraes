@@ -50,13 +50,24 @@ const ContactForm = () => {
   };
 
     return (
-        <div id="contact-form">
-          <h1 className="contact-title">contact.</h1>
-          <input type="text" placeholder="Your Name" value={name} onChange={e => setName(e.target.value)} />
-          <input type="email" placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
-          <textarea placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
-          <button onClick={submit}>Send Message</button>
+      <>
+        <h1 className="contact-title">contact.</h1>
+        <div className='form-container'>
+          <h2>Contact me today, and get reply with in 24 hours!</h2>
+          <form className="contact-form">
+            <label for="input-name">Your Name: <span class="required">*</span></label>
+            <input className='text-input' id="input-name" type="text" value={name} onChange={e => setName(e.target.value)} autoFocus required />
+            
+            <label for="input-email">Your Email: <span class="required">*</span></label>
+            <input className='text-input' id='input-email' type="email" value={email} onChange={e => setEmail(e.target.value)} required />
+
+            <label for="input-message">Your Message: <span class="required">*</span></label>
+            <textarea className='input-message' value={message} onChange={e => setMessage(e.target.value)} required />
+
+            <button className='send' type='submit' id="contact-submit" onClick={submit}>Send Message</button>
+          </form>
         </div>
+      </>
     );
 };
 
