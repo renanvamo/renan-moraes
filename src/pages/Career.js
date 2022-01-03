@@ -7,7 +7,7 @@ export default function Career() {
       <Header />
       <h1 className='career-title'>career.</h1>
       
-      <p>Jul 2020 to present - Working in  course content, projects and evaluators at Trybe school.</p>
+      <p>Jul 2021 to present - Working in improvments of course content, projects and evaluators at Trybe school.</p>
       <Footer />
     </>
   );
