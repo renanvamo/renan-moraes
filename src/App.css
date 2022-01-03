@@ -2,7 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #050505;
+  background-color: #1f1e1e;
   color: #f7e9e6;
   line-height: 1.6em;
   font-family: 'Montserrat', 'Helvetica';
@@ -68,7 +68,7 @@ blockquote {
 
 /* about-page  */
 .about-title {
-  background: linear-gradient(140deg, #f83600 0%, #f9d423 30%);
+  background: linear-gradient(140deg, #e60000 0%, #f9d423 15%);
   background-clip: text;
   font-weight: 700;
   -webkit-text-fill-color: transparent;
@@ -123,9 +123,133 @@ blockquote {
   -webkit-text-fill-color: transparent;
 }
 
+ul.cards {
+  width: 100%;
+  margin: 0 auto 20px;
+  height: 150px;
+  list-style-type: none;
+  position: relative;
+  padding: 20px 0;
+}
+
+ul.cards li.card {
+  overflow: hidden;
+  height: 150px;
+  width: 150px;
+  border-radius: 10px;
+  position: absolute;
+  left: 0px;
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 1px 1px 10px 1px rgb(20, 19, 19);
+  transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+li.card img {
+  width: 100%;
+}
+
+ li.card.front-1 {
+  z-index: 10;
+  transform: rotateZ(-2deg);
+}
+
+li.card.front-2 {
+  z-index: 9;
+  transform: rotateZ(-7deg);
+  transition-delay: 0.05s;
+}
+
+li.card.front-3 {
+  z-index: 8;
+  transform: rotateZ(8deg);
+  transition-delay: 0.1s;
+}
+
+li.card.front-4 {
+  z-index: 7;
+  transform: rotateZ(-12deg);
+  transition-delay: 0.15s;
+}
+
+li.card.front-5 {
+  z-index: 6;
+  transform: rotateZ(3deg);
+  transition-delay: 0.2s;
+}
+
+ul.cards.transition li.card {
+  transform: rotateZ(0deg);
+}
+
+ul.cards.transition li.card.front-4 {
+  left: 170px;
+}
+
+ul.cards.transition li.card.front-3 {
+  left: 340px;
+}
+
+ul.cards.transition li.card.front-2 {
+  left: 510px;
+}
+
+ul.cards.transition li.card.front-1 {
+  left: 680px;
+}
+
+li.card.back-1 {
+  z-index: 9;
+  transform: rotateZ(5deg);
+  transition-delay: 0.05s;
+}
+
+li.card.back-2 {
+  z-index: 8;
+  transform: rotateZ(16deg);
+  transition-delay: 0.1s;
+}
+
+li.card.back-3 {
+  z-index: 7;
+  transform: rotateZ(-6deg);
+  transition-delay: 0.15s;
+}
+
+ul.cards.transition li.card.back-2 {
+  left: 170px;
+}
+
+ul.cards.transition li.card.back-1 {
+  left: 340px;
+}
+
+ul.cards.transition .card .content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s;
+}
+
+ul.cards.transition .card:hover .content {
+	transform: translateY(-20px);
+}
+
+ul.cards.transition .card .skill-desc p {
+	transition: 0.8s;
+	opacity: 0;
+}
+
+ul.cards.transition .card:hover .skill-desc p {
+	opacity: 1;
+}
+
 /* career */
 .career-title {
-  background: linear-gradient(-225deg, #d640b1 0%, #FF1361 18%);
+  background: linear-gradient(-225deg, #be1093 0%, #ee8aab 18%);
   background-clip: text;
   font-weight: 700;
   -webkit-text-fill-color: transparent;
@@ -133,7 +257,7 @@ blockquote {
 
 /* contact */
 .contact-title {
-  background: linear-gradient(-225deg, #11a0d8 0%, #b1dada 30%);
+  background: linear-gradient(-225deg, #0880af 0%, #91e4e4 20%);
   background-clip: text;
   font-weight: 700;
   -webkit-text-fill-color: transparent;
