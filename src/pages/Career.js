@@ -5,10 +5,12 @@ export default function Career() {
   return (
     <>
       <Header />
-      <h1 className='career-title'>career.</h1>
-      
-      <p>Jul 2021 to present - Working in improvments of course content, projects and evaluators at Trybe school.</p>
-      <Footer />
+      <section className='carrer-container'>
+        <h1 className='career-title'>career.</h1>
+        
+        <p>Jul 2021 to present - Working in improvments of course content, projects and evaluators at Trybe school.</p>
+        <Footer />
+      </section>
     </>
   );
 }

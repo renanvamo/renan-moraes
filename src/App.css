@@ -256,6 +256,10 @@ ul.cards.transition .card:hover .skill-desc p {
   -webkit-text-fill-color: transparent;
 }
 
+.carrer-container {
+  padding: 0 40px;
+}
+
 /* contact */
 .contact-title {
   background: linear-gradient(-225deg, #0880af 0%, #91e4e4 20%);
