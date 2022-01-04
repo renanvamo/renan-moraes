@@ -264,6 +264,91 @@ ul.cards.transition .card:hover .skill-desc p {
   -webkit-text-fill-color: transparent;
 }
 
+
+.contact-container {
+  padding: 0 40px;
+}
+
+.form-container {
+  width: 80%;
+  background: #333232;
+  padding: 50px;
+  -webkit-font-smoothing: antialiased;
+  color: #dadada;
+}
+
+.contact-form .text-input {
+  border: none;
+  padding: 10px 15px;
+  background: rgb(60, 60, 60);
+  color: white;
+  outline: none;
+  margin: 10px 0px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition: all 0.2s ease-in;
+  -ms-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.contact-form textarea {
+background: rgb(60, 60, 60);
+resize: none;
+padding: 15px;
+height: 175px;
+width: 80%;
+color: white;
+border: none;
+outline: none;
+-webkit-font-smoothing: antialiased;
+-webkit-transition: all 0.2s ease-in;
+-ms-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+-o-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+background: rgb(51, 47, 47);
+}
+
+.contact-form .send{
+border: none;
+background-color: rgb(83, 77, 77);
+color: white;
+font-size: 105%;
+display: block;
+padding: 10px 20px;
+width: fit-content;
+height: auto;
+-webkit-transition: all 0.2s ease-in;
+-ms-transition: all 0.2s ease-in;
+-moz-transition: all 0.2s ease-in;
+-o-transition: all 0.2s ease-in;
+transition: all 0.2s ease-in;
+margin: 10px 0px;
+cursor:pointer;
+-webkit-font-smoothing: antialiased;
+}
+
+.contact-form .send:hover {
+background-color: rgb(5, 112, 40);
+}
+
+.contact-form label {
+color: white;
+-webkit-font-smoothing: antialiased;
+font-size: 105%;
+margin-top: 20px;
+display: block;
+}
+
+span.required{
+  color:red;	
+}
+
+
 /* footer  */
 
 .footer {
@@ -274,99 +359,3 @@ ul.cards.transition .card:hover .skill-desc p {
   width: 100%;
   text-align: center;
 }
-
-
-/* teste */
-
-  .form-container * {
-    background-color: #333232;
-  }
-  
-  .form-container {
-    width: 80%;
-    background: #333232;
-    padding: 50px;
-    margin: 20px auto;
-    -webkit-font-smoothing: antialiased;
-    color: #3C3C3C;
-  }
-
-  .form-container h2 {
-    background-color: #333232;
-  }
-
-  .form-container .contact-form {
-    background-color: #333232;
-  }
-  
-  .contact-form .text-input {
-    border: none;
-    padding: 10px 15px;
-    background: rgb(60, 60, 60);
-    color: white;
-    outline: none;
-    margin: 10px 0px;
-    -webkit-font-smoothing: antialiased;
-    -webkit-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-  }
-  
-  .contact-form textarea {
-  background: rgb(60, 60, 60);
-  resize: none;
-  padding: 15px;
-  height: 175px;
-  width: 80%;
-  color: white;
-  border: none;
-  outline: none;
-  -webkit-font-smoothing: antialiased;
-  -webkit-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  }
-  
-  .contact-form input:focus, .contact-form textarea:focus{
-  background: rgb(51, 47, 47);
-  }
-  
-  .contact-form .send{
-  border: none;
-  background-color: rgb(83, 77, 77);
-  color: white;
-  font-size: 105%;
-  display: block;
-  padding: 10px 20px;
-  width: fit-content;
-  height: auto;
-  -webkit-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-  margin: 10px 0px;
-  cursor:pointer;
-  -webkit-font-smoothing: antialiased;
-  }
-  
-  .contact-form .send:hover {
-  background-color: rgb(5, 112, 40);
-  }
-  
-  .contact-form label {
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  font-size: 105%;
-  margin-top: 20px;
-  display: block;
-  }
-  
-  span.required{
-    color:red;	
-  }

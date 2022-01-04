@@ -80,7 +80,7 @@ const ContactForm = () => {
   }
 
     return (
-      <>
+      <section className='contact-container'>
         <ToastContainer />
         <h1 className="contact-title">contact.</h1>
         <div className='form-container'>
@@ -98,7 +98,7 @@ const ContactForm = () => {
             <button className='send' type='submit' id="contact-submit" onClick={(e) => submit(e)}>Send Message</button>
           </form>
         </div>
-      </>
+      </section>
     );
 };
 
