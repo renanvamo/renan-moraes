@@ -1,4 +1,8 @@
 import React, { useEffect, useState } from 'react';
+import { isValidEmail } from 'email-js';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import emailjs from 'emailjs-com';
 
 const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;
@@ -15,15 +19,46 @@ const ContactForm = () => {
   const [emailSent, setEmailSent] = useState(false);
   const from_name = 'Renan Moraes';
 
+  const notifySuccess = () => {
+    toast.success("Great! Your email was sent! !", {
+      position: toast.POSITION.BOTTOM_RIGHT,
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    });
+  };
+
+  const notifyFailure = () => {
+    toast.error("Please, fill in all required fields!", {
+      position: toast.POSITION.BOTTOM_RIGHT,
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: 'colored',
+    });
+  }
+
   useEffect(() => {
     if (emailSent) {
-      alert('Thank you for your message, we will be in touch in 24 hours!');
       setEmailSent(false);
     }
   }, [emailSent])
 
-  const submit = () => {
-    if (name && isValidEmail && message) {
+  const submit = (e) => {
+    e.preventDefault();
+    console.log('NAME', name);
+    console.log('isValidEmail', isValidEmail(email));
+    console.log('message', message);
+    if (name && isValidEmail(email) && message) {
+      console.log('passei aqui');
+      notifySuccess();
       const templateParams = {
           name,
           email,
@@ -40,31 +75,27 @@ const ContactForm = () => {
       setMessage('');
       setEmailSent(true);
     } else {
-        alert('Please fill in all fields.');
+        notifyFailure();
     }
   }
 
-  const isValidEmail = email => {
-    const regex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return regex.test(String(email).toLowerCase());
-  };
-
     return (
       <>
+        <ToastContainer />
         <h1 className="contact-title">contact.</h1>
         <div className='form-container'>
           <h2>Contact me today, and get reply with in 24 hours!</h2>
           <form className="contact-form">
-            <label for="input-name">Your Name: <span class="required">*</span></label>
-            <input className='text-input' id="input-name" type="text" value={name} onChange={e => setName(e.target.value)} autoFocus required />
+            <label htmlFor="input-name">Your Name: <span className="required">*</span></label>
+            <input className='text-input' id="input-name" type="text" value={name} onChange={e => setName(e.target.value)} autoFocus required/>
             
-            <label for="input-email">Your Email: <span class="required">*</span></label>
-            <input className='text-input' id='input-email' type="email" value={email} onChange={e => setEmail(e.target.value)} required />
+            <label htmlFor="input-email">Your Email: <span className="required">*</span></label>
+            <input className='text-input' id='input-email' type="email" value={email} onChange={e => setEmail(e.target.value)} />
 
-            <label for="input-message">Your Message: <span class="required">*</span></label>
-            <textarea className='input-message' value={message} onChange={e => setMessage(e.target.value)} required />
+            <label htmlFor="input-message">Your Message: <span className="required">*</span></label>
+            <textarea className='input-message' value={message} onChange={e => setMessage(e.target.value)} />
 
-            <button className='send' type='submit' id="contact-submit" onClick={submit}>Send Message</button>
+            <button className='send' type='submit' id="contact-submit" onClick={(e) => submit(e)}>Send Message</button>
           </form>
         </div>
       </>
