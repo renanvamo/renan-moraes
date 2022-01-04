@@ -2,17 +2,16 @@
 * {
   margin: 0;
   padding: 0;
-  color: #f7e9e6;
   line-height: 1.6em;
-  font-family: 'Montserrat', 'Helvetica';
   letter-spacing: 0.1px;
-  background-color: #1f1e1e;
-
 }
 
 body {
   width: 80%;
   margin: auto;
+  background-color: #1f1e1e;
+  color: #f7e9e6;
+  font-family: 'Montserrat', 'Helvetica';
 }
 
 h1 {
@@ -139,6 +138,7 @@ ul.cards li.card {
   width: 150px;
   border-radius: 10px;
   position: absolute;
+  background-color: #1f1e1e;
   left: 0px;
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 1px 1px 10px 1px rgb(20, 19, 19);
