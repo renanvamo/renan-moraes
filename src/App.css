@@ -208,7 +208,6 @@ ul.cards li.card {
   transition: all 0.4s cubic-bezier(0.63, 0.15, 0.03, 1.12);
   cursor: pointer;
   box-sizing: border-box;
-  /* padding: 5px; */
 }
 
 li.card img {
