@@ -1,5 +1,5 @@
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation } from 'react-router-dom';
 
 import {
   About,
@@ -8,16 +8,20 @@ import {
   Contact,
   Home,
 } from "./pages"
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
+  const location = useLocation();
   return (
-    <Routes>
-      <Route exact path ="/" element={ <Home /> } />
-      <Route exact path ="/about" element={ <About /> } />
-      <Route exact path ="/skills" element={ <Skills /> } />
-      <Route exact path ="/career" element={ <Career /> } />
-      <Route exact path ="/contact" element={ <Contact /> } />
-    </Routes>
+    <AnimatePresence exitBeforeEnter>
+      <Routes location={location} key={location.pathname}>
+        <Route exact path ="/" element={ <Home /> } />
+        <Route exact path ="/about" element={ <About /> } />
+        <Route exact path ="/skills" element={ <Skills /> } />
+        <Route exact path ="/career" element={ <Career /> } />
+        <Route exact path ="/contact" element={ <Contact /> } />
+      </Routes>
+    </AnimatePresence>
   );
 }
 
