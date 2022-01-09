@@ -15,3 +15,14 @@
 [Icons8](https://icons8.com.br/)
 
 ## Run Locally
+1. Clone this repo.
+`git@github.com:renanvamo/personal-page.git`
+
+2. Go to the project's folder:
+`cd personal-page`
+
+3. Install all dependencies:
+`npm install`
+
+Run locally:
+`npm run dev`
