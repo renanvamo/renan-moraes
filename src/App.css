@@ -59,6 +59,7 @@ p {
 }
 
 nav.nav-site ul li a {
+  position: relative;
   padding-bottom: 15px;
   text-decoration: none;
   color: #a39999;
@@ -77,10 +78,6 @@ nav.nav-site ul li a:before {
   transition: all .2s;
 }
 
-nav.nav-site ul li a {
-  position: relative;
-}
-
 nav.nav-site ul li a:after {
   position: absolute;
   bottom: 0;
@@ -90,11 +87,19 @@ nav.nav-site ul li a:after {
   width: 0%;
   content: '.';
   color: transparent;
-  background: #e0dde0;
+  background: #ebebeb;
   height: 1px;
 }
 nav.nav-site ul li a:hover:after {
   width: 100%;
+}
+
+nav.nav-site ul li a:hover {
+  color: #ebebeb;
+}
+
+nav.nav-site ul li a.active-page {
+  color: #ebebeb;
 }
 
 nav.nav-site ul li a.active-page::before {
@@ -106,7 +111,7 @@ nav.nav-site ul li a.active-page::before {
   width: 100%;
   content: '.';
   color: transparent;
-  background: #e0dde0;
+  background: #faf8f8;
   height: 1px;
 }
 
