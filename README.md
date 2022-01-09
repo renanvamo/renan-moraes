@@ -9,10 +9,10 @@
 * Vercel
 
 ## Libraries & Tools
-[Email JS](https://www.emailjs.com/)
-[Framer Motion](https://www.framer.com/motion/)
-[React Toastify](https://fkhadra.github.io/react-toastify/introduction)
-[Icons8](https://icons8.com.br/)
+- [Email JS](https://www.emailjs.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
+- [Icons8](https://icons8.com.br/)
 
 ## Run Locally
 1. Clone this repo.
@@ -24,5 +24,5 @@
 3. Install all dependencies:
 `npm install`
 
-Run locally:
-`npm run dev`
+4. Run locally:
+`npm start`
