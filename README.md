@@ -16,7 +16,7 @@
 
 ## Run Locally
 1. Clone this repo.
-`git@github.com:renanvamo/personal-page.git`
+`git clone git@github.com:renanvamo/personal-page.git`
 
 2. Go to the project's folder:
 `cd personal-page`
