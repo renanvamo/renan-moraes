@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Footer, Header } from '../components'
+import { Footer, Header, PageTransition } from '../components'
 
 const skillsFront = {
   ReactJS: 'https://img.icons8.com/color/200/000000/react-native.png',
@@ -73,17 +73,19 @@ export default function Skills() {
   return (
     <>
       <Header />
-      <section className='skills-container'>
-        <h1 className='skills-title'>Tech Skills</h1>
-        <h2>Front end</h2>
-        <ul className={ isFrontActive ? 'cards transition': 'cards' } >
-          { skillMap(skillsFront, 'front') }
-        </ul>
-        <h2>Back end</h2>
-        <ul className={ isBackActive ? 'cards transition': 'cards' } >
-          { skillMap(skillsBack, 'back') }
-        </ul>
-      </section>
+      <PageTransition>
+        <section className='skills-container'>
+          <h1 className='skills-title'>Tech Skills</h1>
+          <h2>Front end</h2>
+          <ul className={ isFrontActive ? 'cards transition': 'cards' } >
+            { skillMap(skillsFront, 'front') }
+          </ul>
+          <h2>Back end</h2>
+          <ul className={ isBackActive ? 'cards transition': 'cards' } >
+            { skillMap(skillsBack, 'back') }
+          </ul>
+        </section>
+      </PageTransition>
       <Footer />
     </>
   );

@@ -1,11 +1,13 @@
 import React from 'react';
-import { Header, AboutMe, Footer } from '../components'
+import { Header, AboutMe, Footer, PageTransition } from '../components'
 
 export default function About() {
   return (
     <>
       <Header />
-      <AboutMe />
+      <PageTransition>
+        <AboutMe />
+      </PageTransition>
       <Footer />
     </>
   );

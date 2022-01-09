@@ -1,11 +1,13 @@
 import React from 'react';
-import { Header, ContactForm, Footer, WhatasApp } from '../components'
+import { Header, ContactForm, Footer, WhatasApp, PageTransition } from '../components'
 
 export default function Contact() {
   return (
     <>
       <Header />
-      <ContactForm />
+      <PageTransition>
+        <ContactForm />
+      </PageTransition>
       <WhatasApp />
       <Footer />
     </>

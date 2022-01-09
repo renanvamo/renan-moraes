@@ -5,6 +5,7 @@ import AboutMe from "./AboutMe";
 import Footer from "./Footer";
 import ContactForm from "./ContactForm";
 import WhatasApp from "./WhatsApp";
+import PageTransition from "./PageTransition";
 
 export {
   Header,
@@ -14,4 +15,5 @@ export {
   Footer,
   ContactForm,
   WhatasApp,
+  PageTransition,
 }
