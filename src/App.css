@@ -32,6 +32,7 @@ p {
 .nav-site {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .nav-site span {
@@ -474,4 +475,11 @@ span.required{
   bottom: 0;
   width: 100%;
   text-align: center;
+}
+
+.nav-logo {
+  font-size: 105%;
+  letter-spacing: 0.10rem;
+  font-weight: 700;
+  cursor: pointer;
 }
