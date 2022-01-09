@@ -29,10 +29,16 @@ p {
 
 /* header  */
 
+.nav-logo {
+  font-size: 105%;
+  letter-spacing: 0.10rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
 .nav-site {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
 }
 
 .nav-site span {
@@ -58,6 +64,7 @@ nav.nav-site ul li a {
   color: #a39999;
   font-weight: 500;
   margin: 0 10px;
+  letter-spacing: 1px;
 }
 
 nav.nav-site a {
@@ -187,12 +194,14 @@ ul.cards {
 }
 
 ul.cards li.card {
+  font-weight: 600;
+  color: #faf1f1;
   overflow: hidden;
   height: 150px;
   width: 150px;
-  border-radius: 10px;
+  border-radius: 30px;
   position: absolute;
-  background-color: #383737;
+  background-color: #7b807f;
   left: 0px;
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 1px 1px 10px 1px rgb(20, 19, 19);
@@ -475,11 +484,4 @@ span.required{
   bottom: 0;
   width: 100%;
   text-align: center;
-}
-
-.nav-logo {
-  font-size: 105%;
-  letter-spacing: 0.10rem;
-  font-weight: 700;
-  cursor: pointer;
 }
