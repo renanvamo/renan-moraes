@@ -74,7 +74,7 @@ export default function Skills() {
     <>
       <Header />
       <section className='skills-container'>
-        <h1 className='skills-title'>tech skills.</h1>
+        <h1 className='skills-title'>Tech Skills</h1>
         <h2>Front end</h2>
         <ul className={ isFrontActive ? 'cards transition': 'cards' } >
           { skillMap(skillsFront, 'front') }

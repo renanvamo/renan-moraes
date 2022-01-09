@@ -82,7 +82,7 @@ const ContactForm = () => {
     return (
       <section className='contact-container'>
         <ToastContainer />
-        <h1 className="contact-title">contact.</h1>
+        <h1 className="contact-title">Contact</h1>
         <div className='form-container'>
           <h2>Contact me today, and get reply with in 24 hours!</h2>
           <form className="contact-form">
@@ -94,8 +94,8 @@ const ContactForm = () => {
 
             <label htmlFor="input-message">Your Message: <span className="required">*</span></label>
             <textarea className='input-message' value={message} onChange={e => setMessage(e.target.value)} />
-
-            <button className='send' type='submit' id="contact-submit" onClick={(e) => submit(e)}>Send Message</button>
+            
+            <button className="submit-contact" type='submit' onClick={(e) => submit(e)}> Send Email</button>
           </form>
         </div>
       </section>

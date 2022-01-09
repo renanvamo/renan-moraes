@@ -4,7 +4,7 @@ import { AboutPhotos, AboutText } from '.'
 export default function About() {
   return (
     <section className='about-container'>
-      <h1 className='about-title'>about.</h1>
+      <h1 className='about-title'>About</h1>
       <div className='about-content'>
         <AboutText />
         <AboutPhotos />
