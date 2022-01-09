@@ -74,7 +74,7 @@ nav.nav-site a {
 nav.nav-site ul li a,
 nav.nav-site ul li a:after,
 nav.nav-site ul li a:before {
-  transition: all .5s;
+  transition: all .2s;
 }
 
 nav.nav-site ul li a {
