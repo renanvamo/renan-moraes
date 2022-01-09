@@ -14,6 +14,10 @@ body {
   font-family: 'Montserrat', 'Helvetica';
 }
 
+html {
+  overflow-y: scroll;
+}
+
 h1 {
   font-size: 50px;
   line-height: 2.8em;
@@ -24,29 +28,78 @@ p {
 }
 
 /* header  */
-header {
-  font-weight: 300;
-}
 
-nav {
+.nav-site {
   display: flex;
   justify-content: space-between;
 }
-nav span {
+
+.nav-site span {
   padding: 30px 0;
 }
 
-.nav-left {
+.nav-center {
   display: flex;
 }
 
-.nav-left li {
+.nav-center li {
   padding: 30px 20px;
   list-style: none;
 }
 
 .nav-right img {
   margin: 20px 0 20px 10px;
+}
+
+nav.nav-site ul li a {
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: #a39999;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+nav.nav-site a {
+  cursor: pointer;
+}
+
+nav.nav-site ul li a,
+nav.nav-site ul li a:after,
+nav.nav-site ul li a:before {
+  transition: all .5s;
+}
+
+nav.nav-site ul li a {
+  position: relative;
+}
+
+nav.nav-site ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #e0dde0;
+  height: 1px;
+}
+nav.nav-site ul li a:hover:after {
+  width: 100%;
+}
+
+nav.nav-site ul li a.active-page::before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  content: '.';
+  color: transparent;
+  background: #e0dde0;
+  height: 1px;
 }
 
 /* home  */
@@ -138,7 +191,7 @@ ul.cards li.card {
   width: 150px;
   border-radius: 10px;
   position: absolute;
-  background-color: #1f1e1e;
+  background-color: #383737;
   left: 0px;
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 1px 1px 10px 1px rgb(20, 19, 19);
@@ -280,6 +333,7 @@ ul.cards.transition .card:hover .skill-desc p {
   width: 80%;
   background: #333232;
   padding: 50px;
+  margin: 0 auto;
   -webkit-font-smoothing: antialiased;
   color: #dadada;
 }
@@ -320,29 +374,6 @@ transition: all 0.2s ease-in;
 background: rgb(51, 47, 47);
 }
 
-.contact-form .send{
-border: none;
-background-color: rgb(83, 77, 77);
-color: white;
-font-size: 105%;
-display: block;
-padding: 10px 20px;
-width: fit-content;
-height: auto;
--webkit-transition: all 0.2s ease-in;
--ms-transition: all 0.2s ease-in;
--moz-transition: all 0.2s ease-in;
--o-transition: all 0.2s ease-in;
-transition: all 0.2s ease-in;
-margin: 10px 0px;
-cursor:pointer;
--webkit-font-smoothing: antialiased;
-}
-
-.contact-form .send:hover {
-background-color: rgb(5, 112, 40);
-}
-
 .contact-form label {
 color: white;
 -webkit-font-smoothing: antialiased;
@@ -355,6 +386,83 @@ span.required{
   color:red;	
 }
 
+.submit-contact {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: #fff;
+  font-size: 105%;
+  letter-spacing: 0.15rem;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border: none;
+}
+.submit-contact:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(27, 27, 27);
+  z-index: -2;
+  border: none;
+}
+.submit-contact:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #c90bb9;
+  transition: all 0.3s;
+  z-index: -1;
+  border: none;
+}
+.submit-contact:hover {
+  color: rgb(31, 30, 30);
+
+}
+.submit-contact:hover:before {
+  width: 100%;
+}
+
+/* https://dev.to/ebereplenty/add-whatsapp-chat-to-your-website-react-and-html-3a5g#1 */
+/* for desktop */
+.whatsapp_float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp-icon {
+  margin-top: 16px;
+}
+
+/* for mobile */
+@media screen and (max-width: 767px) {
+  .whatsapp-icon {
+      margin-top: 10px;
+  }
+
+  .whatsapp_float {
+      width: 40px;
+      height: 40px;
+      bottom: 20px;
+      right: 10px;
+      font-size: 22px;
+  }
+}
 
 /* footer  */
 
