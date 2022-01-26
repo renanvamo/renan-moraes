@@ -1,7 +1,7 @@
 import React from 'react';
-import renan from '../images/renan-trybe.jpeg'
-import heitor from '../images/fio-lindo.jpeg';
-import renan_e_fabiana from '../images/renan-e-fabi.jpg';
+import renan from '../static/images/renan-trybe.jpeg'
+import heitor from '../static/images/fio-lindo.jpeg';
+import renan_e_fabiana from '../static/images/renan-e-fabi.jpg';
 
 export default function Photos() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
-import linkedin from '../images/linkedin.png';
-import github from '../images/logotipo-do-github.png';
+import linkedin from '../static/images/linkedin.png';
+import github from '../static/images/logotipo-do-github.png';
 import { useNavigate, useLocation } from 'react-router-dom';
 
 export default function Header() {
@@ -11,7 +11,7 @@ export default function Header() {
   const myGithub = 'https://github.com/renanvamo';
 
   const navigateTo = (e, path) => {
-    // e.preventDefault();
+    e.preventDefault();
     navigate(path);
   }
 
